@@ -1,0 +1,248 @@
+* {
+    margin: 1% auto;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif
+}
+
+:root {
+    --primary-color: #FF42A5;
+    --secondary-color:linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+}
+section{
+    margin-bottom: 7%;
+}
+
+/* header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 86px;
+    height: 40px;
+    /* padding-right: 10px; */
+}
+
+.header-logo .g {
+    width: 147px;
+    height: 53px;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.header-text a {
+    text-decoration: none;
+    margin: 10px;
+    color: #3C354F;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+.header-text .follow {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    width: 262px;
+    height: 56px;
+    padding: 10px;
+}
+
+
+
+
+/* section one style */
+.section-one {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 66, 165, 0.03);
+    padding-bottom: 200px;
+    /* height: 446px; */
+}
+
+.section-one .section-one-text {
+    padding-left: 150px;
+    padding-top: 130px;
+}
+
+.section-one .section-one-text h2 {
+    font-size: 3rem;
+}
+
+.section-one .section-one-text h1 {
+    font-size: 6rem;
+    background:var(--secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 30px;
+
+}
+
+.section-one .section-one-text ul li {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+.section-one>.section-one-img {
+    /* padding-right: 200px; */
+    padding-left: 68px;
+    
+}
+
+.section-one-text ul {
+    margin-bottom: 50px;
+}
+
+.section-one-text .sign-in {
+
+    border-radius: 48px;
+    text-decoration: none;
+    padding: 21px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+
+}
+
+.section-one-text .go-rogue {
+    border-radius: 48px;
+    text-decoration: none;
+    padding: 21px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #4EC5F7;
+}
+
+
+
+
+
+/* Funny Video */
+.funny-video{
+    text-align: center;
+    /* margin: 0px 50px; */
+}
+.funny-video h2{
+    font-size: 3rem;
+}
+.funny-video p{
+    font-size: 1.2rem;
+    color:#534C64;
+}
+.funny-video-card{
+      display: flex;
+}
+/* .funny-video-card .card img{
+    width: 342px;
+} */
+.funny-video .funny-span{
+    background: var(--secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Play INstant */
+.play-instant{
+    display: flex;
+    margin-left: 250px;
+    margin-right: 150px;
+}
+.play-instant .play-instant-text{
+
+    margin-top: 190px;
+    margin-right: 180px;
+}
+.play-instant .play-instant-img img{
+    width: 634.833px;
+    height: 650px;
+}
+.play-instant .play-instant-text h3{
+    color:rgb(251, 81, 225);
+font-size: 48px;
+
+}
+.play-instant .play-instant-text p{
+    padding-top: 5%;
+    font-size: 18px;
+    font-weight: 400;
+    }
+
+
+@media screen and (max-width:576px) {
+
+    .header,
+    .section-one , .funny-video-card, .play-instant{
+        flex-direction: column;
+    }
+
+    .header-text a {
+        margin: 0px;
+    }
+
+    .section-one img {
+        width: 45%;
+    }
+
+    .section-one-text .sign-in,
+    .section-one-text .go-rogue {
+        padding: 5px;
+    }
+
+    .section-one-text h1,
+    .section-one-text h2 {
+        font-size: 1rem;
+    }
+
+    .section-one .section-one-text {
+        margin: 0;
+        padding-left: 5%;
+    }
+
+     .funny-video .funny-video-card .card img{
+   width: 50%;
+     }
+    .play-instant{
+        margin: 10%;
+    }
+    .play-instant .play-instant-img img{
+        margin-left: 5%;
+     width: 70%;
+     height: 50%;
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .header,
+    .section-one , .funny-video-card , .play-instant{
+        flex-direction: column;
+    }
+
+    .section-one img {
+       margin-left: 1%;
+        width: 60%;
+    }
+
+    .section-one .section-one-text {
+        padding-left: 5%;
+    }
+    .play-instant .play-instant-img img{
+        margin-left: 5%;
+     width: 80%;
+     height: 50%;
+    }
+}
