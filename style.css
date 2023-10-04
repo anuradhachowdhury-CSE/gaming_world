@@ -6,9 +6,10 @@
 
 :root {
     --primary-color: #FF42A5;
-    --secondary-color:linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    --secondary-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
 }
-section{
+
+section {
     margin-bottom: 7%;
 }
 
@@ -80,7 +81,7 @@ section{
 
 .section-one .section-one-text h1 {
     font-size: 6rem;
-    background:var(--secondary-color);
+    background: var(--secondary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 30px;
@@ -97,7 +98,7 @@ section{
 .section-one>.section-one-img {
     /* padding-right: 200px; */
     padding-left: 68px;
-    
+
 }
 
 .section-one-text ul {
@@ -131,60 +132,186 @@ section{
 
 
 /* Funny Video */
-.funny-video{
+.funny-video {
     text-align: center;
     /* margin: 0px 50px; */
 }
-.funny-video h2{
+
+.funny-video h2 {
     font-size: 3rem;
 }
-.funny-video p{
+
+.funny-video p {
     font-size: 1.2rem;
-    color:#534C64;
+    color: #534C64;
 }
-.funny-video-card{
-      display: flex;
+
+.funny-video-card {
+    display: flex;
+    gap: 1%;
+   
 }
-/* .funny-video-card .card img{
-    width: 342px;
-} */
-.funny-video .funny-span{
+
+
+
+.funny-video .funny-span {
     background: var(--secondary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+
+
+
 /* Play INstant */
-.play-instant{
+.play-instant {
     display: flex;
     margin-left: 250px;
     margin-right: 150px;
 }
-.play-instant .play-instant-text{
+
+.play-instant .play-instant-text {
 
     margin-top: 190px;
     margin-right: 180px;
 }
-.play-instant .play-instant-img img{
+
+.play-instant .play-instant-img img {
     width: 634.833px;
     height: 650px;
 }
-.play-instant .play-instant-text h3{
-    color:rgb(251, 81, 225);
-font-size: 48px;
+
+.play-instant .play-instant-img .crop-img {
+    position: relative;
+    right: 50px;
+    bottom: 150px;
+    width: 318.5px;
+    height: 365.083px;
+}
+
+.play-instant .play-instant-text h3 {
+    color: rgb(251, 81, 225);
+    font-size: 48px;
 
 }
-.play-instant .play-instant-text p{
+
+.play-instant .play-instant-text p {
     padding-top: 5%;
     font-size: 18px;
     font-weight: 400;
-    }
+}
+
+
+
+
+
+/* Types of Games style */
+.types-of-games {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 1%;
+    background-color: aliceblue;
+    gap: 20px;
+
+}
+
+.types-of-games .games-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 243px;
+    height: 80px;
+    background-color: #FFF;
+    border-radius: 50px;
+}
+
+.types-of-games .games-option:hover {
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    color: var(--primary-color);
+
+}
+
+.types-of-games .xtra {
+    margin-left: 200px;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: black;
+  
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+
+.footer-title h2 {
+    color: white;
+    font-size: 45px;
+
+}
+
+.footer-list-item {
+    width: 794px;
+    height: 21px;
+}
+
+.footer-list-item>ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.footer-list-item>ul>li {
+    list-style: none;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.icon-list {
+    width: 600px;
+    text-align: center;
+
+}
+
+.icon-list img {
+    /* display: flex; */
+    width: 50px;
+    margin: 3%;
+}
+
+.footer-2nd-end {
+    color: gray;
+    display: flex;
+    width: 700px;
+    font-size: 16px;
+}
+
+.footer-end {
+    color: gray;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 100px;
+}
+
+
 
 
 @media screen and (max-width:576px) {
 
     .header,
-    .section-one , .funny-video-card, .play-instant{
+    .section-one,
+    .funny-video-card,
+    .play-instant {
         flex-direction: column;
     }
 
@@ -211,38 +338,102 @@ font-size: 48px;
         padding-left: 5%;
     }
 
-     .funny-video .funny-video-card .card img{
-   width: 50%;
-     }
-    .play-instant{
+    .funny-video .funny-video-card .card img {
+        width: 50%;
+    }
+    .funny-video .card p{
+        font-size: 0.9rem;
+    }
+
+    .play-instant {
         margin: 10%;
     }
-    .play-instant .play-instant-img img{
+
+    .play-instant .play-instant-img img {
         margin-left: 5%;
-     width: 70%;
-     height: 50%;
+        width: 70%;
+        height: 50%;
     }
-    
+
+    .types-of-games {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .types-of-games .xtra {
+        margin-left: auto;
+    }
+
+    footer .footer-list-item {
+        width: 200px;
+        text-align: center;
+        height: 200px;
+    }
+
+    footer .footer-list-item > ul {
+        flex-direction: column;
+    }
+
+    footer .icon-list {
+        display:flex;
+        width: 380px;
+        
+    }
+    .icon-list img{
+        width: 40px;
+    }
+    .footer-2nd-end{
+        width: 80%;
+    }
+    .footer-end{
+        font-size: 10px;
+    }
+    .play-instant .play-instant-img .crop-img{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        bottom: -15px;
+        right:  270px;
+    }
 }
+
 
 @media screen and (min-width:576px) and (max-width:992px) {
 
     .header,
-    .section-one , .funny-video-card , .play-instant{
+    .section-one,
+    .funny-video-card,
+    .play-instant {
         flex-direction: column;
     }
 
     .section-one img {
-       margin-left: 1%;
+        margin-left: 1%;
         width: 60%;
     }
 
     .section-one .section-one-text {
         padding-left: 5%;
     }
-    .play-instant .play-instant-img img{
+
+    .play-instant .play-instant-img img {
         margin-left: 5%;
-     width: 80%;
-     height: 50%;
+        width: 80%;
+        height: 50%;
+    }
+
+    .types-of-games {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .types-of-games .xtra {
+        margin-left: auto;
+    }
+    .play-instant .play-instant-img .crop-img{
+        width: 200px;
+        height: 200px;
+        /* position: relative; */
+       
     }
 }
